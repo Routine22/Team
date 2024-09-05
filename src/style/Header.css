@@ -1,0 +1,94 @@
+/* Header.css */
+.header {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .nav {
+    display: flex;
+  }
+  
+  .nav-link, .login-button {
+    text-decoration: none;
+    color: #000;
+    padding: 4px 8px; /* Consistent padding */
+    margin: 0 4px; /* Add horizontal margins between items */
+  }
+  
+  .nav-link.active {
+    font-weight: bold;
+  }
+  
+  .login-button {
+    border: 1px solid #000;
+    border-radius: 4px;
+    background-color: #fff; /* White background color */
+    color: #000; /* Black text color */
+    margin-left: 1150px;
+  }
+  
+  .login-button:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Light gray on hover */
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: black; /* Button text color */
+    padding: 8px 12px;
+    font-size: 1rem;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent; /* Transparent background */
+    box-shadow: none; /* No shadow */
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black; /* Link text color */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: transparent; /* Ensure no background color */
+  }
+  
+  .dropdown-content a:hover {
+    color: #ddd; /* Change text color on hover */
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: rgba(0, 0, 0, 0.1); /* Slight background change on hover */
+  }
+  
